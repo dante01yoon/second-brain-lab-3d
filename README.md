@@ -17,9 +17,14 @@ This plugin adapts the visual language of the [AI Second Brain Lab practice repo
 
 ## Install
 
-Once accepted into the community directory, open **Settings → Community plugins → Browse**, search for **Second Brain Lab 3D**, then install and enable it. To install a release manually, copy `main.js`, `manifest.json`, and `styles.css` from the same tagged [GitHub release](https://github.com/dante01yoon/second-brain-lab-3d/releases) into `<vault>/.obsidian/plugins/second-brain-lab/`, restart Obsidian, and enable the plugin.
+**Status on September 23, 2026:** The [community listing](https://community.obsidian.md/plugins/second-brain-lab) is live, but its automated review is still in progress and **Add to Obsidian** is disabled. After acceptance, open **Settings → Community plugins → Browse**, search for **Second Brain Lab 3D**, then install and enable it. To use the plugin now:
 
-Use the ribbon icon or **Open 3D view** in the command palette. Select a point or a title to read a note; click **Open note** to open the actual file. Change language, folder, or note limit under **Settings → Second Brain Lab 3D**. The folder path is relative to the vault root. The first 1,000 notes are shown by default; the view reports how many are omitted by the limit.
+1. Open the vault you want to visualize in desktop Obsidian **1.13.7 or newer**.
+2. Download **main.js**, **manifest.json**, and **styles.css** individually from the [0.1.0 release assets](https://github.com/dante01yoon/second-brain-lab-3d/releases/tag/0.1.0). The source-code archive is not the install bundle.
+3. Open **Settings → Community plugins** and click the folder icon beside **Installed plugins** to open this vault's `.obsidian/plugins` folder. Create a subfolder named `second-brain-lab`.
+4. Put the three downloaded files directly in `<vault>/.obsidian/plugins/second-brain-lab/`. Restart Obsidian, then enable **Second Brain Lab 3D** under **Installed plugins**. If it is missing, check the exact folder and filenames, Restricted mode, and your Obsidian version.
+
+Use the ribbon icon or **Second Brain Lab 3D: Open 3D view** in the command palette (`Cmd/Ctrl+P`). Search for a note title on the left and select a result to read it; click **Open note** to open the actual Markdown file. Choose **Settings → Second Brain Lab 3D → Interface language → Korean** for the Korean interface. You can also change the folder filter and note limit there. The folder path is relative to the vault root. The first 1,000 notes are shown by default; the view reports how many are omitted by the limit.
 
 ## Privacy and scope
 
