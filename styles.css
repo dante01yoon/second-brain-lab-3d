@@ -1,0 +1,165 @@
+.sbl3d-host {
+  --sbl-bg: #090f1c;
+  --sbl-panel: #0d1725;
+  --sbl-border: #27384b;
+  --sbl-text: #e7f1f7;
+  --sbl-muted: #9db2c3;
+  height: 100%;
+  padding: 0 !important;
+  container-type: inline-size;
+}
+
+.sbl3d-host .sbl3d-root {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.85fr) minmax(300px, 1.65fr) minmax(240px, 1fr);
+  height: 100%;
+  min-height: 460px;
+  overflow: hidden;
+  color: var(--sbl-text);
+  background: var(--sbl-bg);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.sbl3d-root *, .sbl3d-root *::before, .sbl3d-root *::after { box-sizing: border-box; }
+.sbl3d-root button, .sbl3d-root input { font: inherit; }
+.sbl3d-root button { cursor: pointer; }
+
+.sbl3d-sidebar, .sbl3d-detail {
+  min-width: 0;
+  overflow: auto;
+  background: var(--sbl-panel);
+}
+.sbl3d-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 18px 16px;
+  border-right: 1px solid var(--sbl-border);
+}
+.sbl3d-detail { border-left: 1px solid var(--sbl-border); }
+
+.sbl3d-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  color: #ecf7fb;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .14em;
+  white-space: nowrap;
+}
+.sbl3d-brand b { color: #75e2c7; }
+.sbl3d-mark { color: #75e2c7; font-size: 25px; letter-spacing: 0; }
+.sbl3d-title {
+  margin: 0 0 9px;
+  color: #eff8fc;
+  font-size: 23px;
+  line-height: 1.22;
+  letter-spacing: -.035em;
+}
+.sbl3d-intro { margin: 0 0 20px; color: var(--sbl-muted); font-size: 12px; line-height: 1.65; }
+.sbl3d-count { margin-bottom: 10px; color: #b9d0d7; font-size: 11px; font-weight: 700; }
+.sbl3d-search {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  border: 1px solid #34475b;
+  border-radius: 9px;
+  outline: none;
+  color: #eef9fa;
+  background: #111f30;
+  font-size: 12px;
+}
+.sbl3d-search:focus { border-color: #70ddc2; box-shadow: 0 0 0 2px #70ddc226; }
+.sbl3d-search::placeholder { color: #8ba1b2; }
+.sbl3d-list { flex: 1; min-height: 80px; overflow: auto; }
+.sbl3d-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 9px 8px;
+  border: 0;
+  border-radius: 8px;
+  color: #b8cdda;
+  background: transparent;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.35;
+}
+.sbl3d-note:hover, .sbl3d-note.is-active { color: #f5fffd; background: #1b3941; }
+.sbl3d-note-dot { flex: 0 0 auto; width: 7px; height: 7px; border-radius: 50%; background: #72dfc6; box-shadow: 0 0 7px #72dfc688; }
+.sbl3d-note span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sbl3d-warning { color: #f4c899; font-size: 11px; line-height: 1.5; }
+.sbl3d-privacy { margin: 18px 0 0; color: #7f9aab; font-size: 10px; line-height: 1.5; }
+
+.sbl3d-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #090f1c; }
+.sbl3d-canvas { position: absolute; inset: 0; }
+.sbl3d-canvas canvas { display: block; width: 100%; height: 100%; }
+.sbl3d-stage-top {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 11px;
+  border: 1px solid #2d4456;
+  border-radius: 999px;
+  color: #c0d7dd;
+  background: #112033d9;
+  font-size: 11px;
+  pointer-events: none;
+}
+.sbl3d-live-dot { width: 6px; height: 6px; border-radius: 50%; background: #6de7c3; box-shadow: 0 0 7px #6de7c3; }
+.sbl3d-reload {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 8px 10px;
+  border: 1px solid #365167;
+  border-radius: 8px;
+  color: #d5f5ec;
+  background: #142b38e8;
+  font-size: 11px;
+}
+.sbl3d-reload:hover { background: #23504f; }
+.sbl3d-hint {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  left: 18px;
+  color: #9bb1c1;
+  font-size: 11px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.sbl3d-detail-head { display: flex; flex-direction: column; gap: 7px; padding: 23px 18px 19px; border-bottom: 1px solid var(--sbl-border); }
+.sbl3d-group-pill { align-self: flex-start; padding: 4px 9px; border: 1px solid #347a6f; border-radius: 999px; color: #a2f4dc; background: #173d3d; font-size: 10px; font-weight: 700; }
+.sbl3d-detail h3 { margin: 4px 0; color: #eff9fb; font-size: 21px; line-height: 1.3; overflow-wrap: anywhere; }
+.sbl3d-detail small { color: #8ca7b6; font-size: 10px; }
+.sbl3d-detail code { color: #9bbbd0; font-size: 10px; white-space: normal; overflow-wrap: anywhere; }
+.sbl3d-open { align-self: flex-start; margin-top: 8px; padding: 9px 12px; border: 1px solid #6bdec3; border-radius: 8px; color: #102c2c; background: #7ce2c8; font-size: 11px; font-weight: 700; }
+.sbl3d-open:hover { background: #a3f2de; }
+.sbl3d-note-body { padding: 18px; color: #d3e2ea; font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.sbl3d-note-body h1, .sbl3d-note-body h2, .sbl3d-note-body h3 { color: #ecf7fb; }
+.sbl3d-note-body a { color: #85dbcf; }
+.sbl3d-note-body pre { overflow-x: auto; padding: 10px; border-radius: 7px; background: #142335; }
+.sbl3d-note-body img { max-width: 100%; }
+.sbl3d-detail-empty { display: flex; min-height: 100%; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; }
+.sbl3d-empty-orb { display: grid; place-items: center; width: 94px; height: 94px; margin-bottom: 15px; border: 1px solid #398579; border-radius: 50%; color: #8bebd2; background: radial-gradient(circle, #27605c 0%, #11243a 60%, #0d1725 100%); box-shadow: 0 0 38px #60ddc532; font-size: 43px; }
+.sbl3d-detail-empty p { max-width: 200px; color: #9eb4c2; font-size: 11px; line-height: 1.65; }
+
+@container (max-width: 790px) {
+  .sbl3d-host .sbl3d-root { grid-template-columns: minmax(190px, .8fr) minmax(280px, 1.3fr); grid-template-rows: minmax(320px, 1fr) 220px; }
+  .sbl3d-sidebar { grid-column: 1; grid-row: 1 / 3; }
+  .sbl3d-stage { grid-column: 2; grid-row: 1; }
+  .sbl3d-detail { grid-column: 2; grid-row: 2; border-top: 1px solid var(--sbl-border); border-left: 0; }
+}
+@container (max-width: 560px) {
+  .sbl3d-host .sbl3d-root { display: flex; flex-direction: column; overflow: auto; }
+  .sbl3d-stage { order: 1; flex: 0 0 340px; }
+  .sbl3d-sidebar { order: 2; flex: 0 0 260px; border-top: 1px solid var(--sbl-border); border-right: 0; }
+  .sbl3d-detail { order: 3; flex: 0 0 300px; }
+}
