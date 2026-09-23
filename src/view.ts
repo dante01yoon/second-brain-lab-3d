@@ -118,7 +118,7 @@ export class BrainView extends ItemView {
     if (this.refreshTimer !== null) window.clearTimeout(this.refreshTimer);
     this.selectionEpoch++;
     for (const remove of this.cleanup.splice(0)) remove();
-    if (this.frameId !== null) cancelAnimationFrame(this.frameId);
+    if (this.frameId !== null) window.cancelAnimationFrame(this.frameId);
     this.resizeObserver?.disconnect();
     this.resizeObserver = null;
     this.clearGraph();
@@ -177,7 +177,7 @@ export class BrainView extends ItemView {
       const animate = () => {
         controls.update();
         renderer.render(scene, camera);
-        this.frameId = requestAnimationFrame(animate);
+        this.frameId = window.requestAnimationFrame(animate);
       };
       animate();
     } catch {

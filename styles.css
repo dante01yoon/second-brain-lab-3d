@@ -5,7 +5,7 @@
   --sbl-text: #e7f1f7;
   --sbl-muted: #9db2c3;
   height: 100%;
-  padding: 0 !important;
+  padding: 0;
   container-type: inline-size;
 }
 
@@ -17,7 +17,7 @@
   overflow: hidden;
   color: var(--sbl-text);
   background: var(--sbl-bg);
-  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .sbl3d-root *, .sbl3d-root *::before, .sbl3d-root *::after { box-sizing: border-box; }

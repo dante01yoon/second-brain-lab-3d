@@ -30,10 +30,6 @@ export default class SecondBrainLabPlugin extends Plugin {
     this.registerEvent(this.app.metadataCache.on("resolved", () => this.refreshViews()));
   }
 
-  async onunload(): Promise<void> {
-    this.app.workspace.detachLeavesOfType(VIEW_TYPE);
-  }
-
   async saveSettings(): Promise<void> {
     await this.saveData(this.settings);
     this.refreshViews();
@@ -48,7 +44,7 @@ export default class SecondBrainLabPlugin extends Plugin {
   private async openView(): Promise<void> {
     const existing = this.app.workspace.getLeavesOfType(VIEW_TYPE)[0];
     if (existing) {
-      this.app.workspace.revealLeaf(existing);
+      await this.app.workspace.revealLeaf(existing);
       return;
     }
     const leaf = this.app.workspace.getLeaf(true);

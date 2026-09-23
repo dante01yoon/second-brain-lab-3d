@@ -29,10 +29,10 @@ Select a note in the graph, then **Open note** to read its Markdown file in Obsi
 
 ## Install
 
-**Status on September 23, 2026:** The [community listing](https://community.obsidian.md/plugins/second-brain-lab) is live, but its automated review is still in progress and **Add to Obsidian** is disabled. After acceptance, open **Settings → Community plugins → Browse**, search for **Second Brain Lab 3D**, then install and enable it. To use the plugin now:
+**Status on September 23, 2026:** Version 0.1.0 failed the [community directory review](https://community.obsidian.md/plugins/second-brain-lab) and was removed from the listing. Version 0.1.1 fixes the blocking lifecycle issue and awaits a new review. **Add to Obsidian** is unavailable until acceptance. After acceptance, open **Settings → Community plugins → Browse**, search for **Second Brain Lab 3D**, then install and enable it. To use the plugin now:
 
 1. Open the vault you want to visualize in desktop Obsidian **1.13.7 or newer**.
-2. Download **main.js**, **manifest.json**, and **styles.css** individually from the [0.1.0 release assets](https://github.com/dante01yoon/second-brain-lab-3d/releases/tag/0.1.0). The source-code archive is not the install bundle.
+2. Download **main.js**, **manifest.json**, and **styles.css** individually from the [0.1.1 release assets](https://github.com/dante01yoon/second-brain-lab-3d/releases/tag/0.1.1). The source-code archive is not the install bundle.
 3. Open **Settings → Community plugins** and click the folder icon beside **Installed plugins** to open this vault's `.obsidian/plugins` folder. Create a subfolder named `second-brain-lab`.
 4. Put the three downloaded files directly in `<vault>/.obsidian/plugins/second-brain-lab/`. Restart Obsidian, then enable **Second Brain Lab 3D** under **Installed plugins**. If it is missing, check the exact folder and filenames, Restricted mode, and your Obsidian version.
 
