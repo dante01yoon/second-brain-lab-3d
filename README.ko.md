@@ -20,7 +20,7 @@ Obsidian 데스크톱 1.13.7에서 공개 실습 보관함의 복사본(노트 3
 
 ## 설치와 사용
 
-**2026-09-23 기준:** 0.1.0은 [커뮤니티 디렉터리 심사](https://community.obsidian.md/plugins/second-brain-lab)에서 탈락해 목록에서 내려갔습니다. 실패 원인인 화면 종료 처리를 고친 0.1.1은 재심사를 기다리고 있습니다. 승인 전에는 **Add to Obsidian**으로 설치할 수 없습니다. 승인 후에는 **설정 → 커뮤니티 플러그인 → 탐색**에서 **Second Brain Lab 3D**를 검색해 설치하고 활성화하면 됩니다. 현재 바로 써보려면 아래 수동 설치를 따라주세요.
+**2026-09-23 기준:** 0.1.0은 [커뮤니티 디렉터리 심사](https://community.obsidian.md/plugins/second-brain-lab)에서 탈락했습니다. 오류를 고친 0.1.1은 자동 검사에서 차단 오류가 없었고, 등록 페이지의 **Add to Obsidian** 링크가 활성화됐습니다. 수동 재심사 요청은 아직 열려 있습니다. Obsidian **설정 → 커뮤니티 플러그인 → 탐색**에서 **Second Brain Lab 3D**를 검색해 설치하고 활성화하세요. 수동 설치가 필요하면 아래 절차를 사용하세요.
 
 1. Obsidian 데스크톱 **1.13.7 이상**에서 3D로 볼 보관함을 엽니다.
 2. [GitHub 릴리스 0.1.1](https://github.com/dante01yoon/second-brain-lab-3d/releases/tag/0.1.1)의 **Assets**에서 `main.js`, `manifest.json`, `styles.css` **세 파일을 각각** 받습니다. `Source code (zip)`은 설치 파일이 아닙니다.
