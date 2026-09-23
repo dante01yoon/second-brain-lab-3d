@@ -1,6 +1,8 @@
 import { build, context } from "esbuild";
+import { readFileSync } from "node:fs";
 
 const production = process.argv.includes("production");
+const threeLicense = readFileSync("node_modules/three/LICENSE", "utf8");
 const options = {
   entryPoints: ["src/main.ts"],
   bundle: true,
@@ -13,6 +15,7 @@ const options = {
   minify: production,
   logLevel: "info",
   define: { "process.env.NODE_ENV": JSON.stringify(production ? "production" : "development") },
+  banner: { js: `/*\n${threeLicense}\n*/` },
 };
 
 if (production) await build(options);

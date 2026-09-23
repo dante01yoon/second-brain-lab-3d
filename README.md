@@ -25,7 +25,7 @@ Use the ribbon icon or **Open 3D view** in the command palette. Select a point o
 
 The plugin reads Markdown files through Obsidian's Vault API and links through its metadata cache. It does not edit files, save AI conversations, run Hooks or Laya, make network requests, or send vault content to any server. It does not require an account or payment and collects no telemetry. Opening a link already present inside a rendered note follows Obsidian's normal behavior.
 
-Node positions are arranged to make folder groups easier to scan. Spatial distance has no semantic or scientific meaning. For very large vaults, narrow the folder filter or lower the note limit to keep the view responsive. Mobile has not been validated and is not included in the first release.
+Node positions are arranged to make folder groups easier to scan. Spatial distance has no semantic or scientific meaning. For very large vaults, narrow the folder filter or lower the note limit to keep the view responsive. Mobile has not been validated and is not included in the first release. The 3D renderer uses [Three.js](https://threejs.org/) under its MIT license; its copyright and license notice is included in the release bundle.
 
 ## Develop and verify
 

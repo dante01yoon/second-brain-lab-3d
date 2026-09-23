@@ -13,4 +13,6 @@ const bundle = await readFile("main.js", "utf8");
 for (const forbidden of ["/api/graph", "graph-en.json", "graph-ko.json", "127.0.0.1:5173"]) {
   if (bundle.includes(forbidden)) throw new Error(`Development viewer dependency found: ${forbidden}`);
 }
+if (!bundle.includes("Copyright © 2010-2025 three.js authors"))
+  throw new Error("Three.js license notice missing from release bundle");
 console.log(`Release assets valid for ${manifest.id} ${manifest.version}`);
