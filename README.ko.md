@@ -6,6 +6,18 @@
 
 [AI Second Brain Lab 실습 저장소](https://github.com/dante01yoon/ai-second-brain-lab)의 3D 화면을 Obsidian 안으로 옮겼습니다. 예시 보관함, Codex·Claude Code Hook 실습, 선택형 로컬 Laya 실험은 기존 저장소에 있습니다. 이 플러그인은 **현재 보관함을 읽는 3D 뷰어**입니다.
 
+## 실제 화면
+
+Obsidian 데스크톱 1.13.7에서 공개 실습 보관함의 복사본(노트 37개, 링크 60개)을 열어 촬영했습니다. 별도 브라우저 뷰어가 아니라 Obsidian 안에서 실행한 화면입니다.
+
+![Obsidian 안의 Second Brain Lab 3D 그래프와 선택한 React 노트](docs/screenshots/obsidian-3d-graph.png)
+
+그래프에서 노트를 고르고 **Open note**를 누르면 Obsidian의 원본 Markdown 파일로 이동합니다.
+
+![Obsidian에서 열린 React useEffect 노트](docs/screenshots/obsidian-open-note.png)
+
+[커뮤니티 플러그인 활성화 화면](docs/screenshots/obsidian-enabled.jpg) · [언어와 폴더 설정 화면](docs/screenshots/obsidian-settings.jpg)
+
 ## 설치와 사용
 
 **2026-09-23 기준:** [커뮤니티 등록 페이지](https://community.obsidian.md/plugins/second-brain-lab)는 열렸지만 자동 심사 중이라 **Add to Obsidian** 버튼이 비활성화돼 있습니다. 심사가 끝나 버튼이 켜지면 **설정 → 커뮤니티 플러그인 → 탐색**에서 **Second Brain Lab 3D**를 검색해 설치하고 활성화하면 됩니다. 현재 바로 써보려면 아래 수동 설치를 따라주세요.

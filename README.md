@@ -6,6 +6,18 @@ Explore the Markdown notes and resolved internal links in your current Obsidian 
 
 This plugin adapts the visual language of the [AI Second Brain Lab practice repo](https://github.com/dante01yoon/ai-second-brain-lab). The practice repo still contains the bilingual sample vault, Codex and Claude Code Hook exercises, and optional local Laya experiment. This plugin is only the read-only 3D vault viewer.
 
+## Screenshots
+
+Captured in desktop Obsidian 1.13.7 with a disposable copy of the public practice vault (37 notes, 60 links). These show the native plugin, not the separate browser viewer.
+
+![Second Brain Lab 3D graph and selected React note inside Obsidian](docs/screenshots/obsidian-3d-graph.png)
+
+Select a note in the graph, then **Open note** to read its Markdown file in Obsidian:
+
+![React useEffect note opened in Obsidian](docs/screenshots/obsidian-open-note.png)
+
+[Enabled plugin in Community plugins](docs/screenshots/obsidian-enabled.jpg) · [Interface language and folder settings](docs/screenshots/obsidian-settings.jpg)
+
 ## Features
 
 - Interactive Three.js graph with rotate, zoom, search, and a Markdown detail pane
